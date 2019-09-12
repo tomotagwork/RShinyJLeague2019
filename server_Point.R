@@ -1,6 +1,13 @@
 
 
 output$plotly_point <- renderPlotly({
+
+  
+  # set factor levels for legend order
+  dfTeamData_plot <- dfTeamData
+  dfTeamData_plot$target_team <- factor(dfTeamData_plot$target_team, levels=teamOrder)
+  
+  # plot graph
   plotPoint <- ggplot2::ggplot(dfTeamData_plot, aes(x=as.Date(matchday), y=target_team_cumpoint, color=target_team)) + 
     geom_line() +   geom_point() +
     labs(x="date", y="points") +

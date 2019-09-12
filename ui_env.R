@@ -1,10 +1,5 @@
-menuStrLogin <- "ログイン"
+menuStrPoint <- "勝点推移"
 
-menuStrCategory01 <- "カテゴリー01"
-menuStrMenu01 <- "メニュー01"
-menuStrMenu02 <- "メニュー02"
-
-menuStrCategory02 <- "カテゴリー02"
-menuStrMenu03 <- "メニュー03"
-
-menuStrReportDownload <- "レポートダウンロード"
+menuStrResult <- "日程/結果"
+menuStrResultAll <- "一覧"
+menuStrResultTeam <- "チーム別"

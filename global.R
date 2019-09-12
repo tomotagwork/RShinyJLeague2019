@@ -13,6 +13,10 @@ library(shinyBS)
 library(dygraphs)
 library(xts)
 library(rpivotTable)
+library(reshape2)
+library(xml2)
+library(rvest)
+library(purrr)
 
 source('./global_env.R', local=TRUE)
 

@@ -1,7 +1,8 @@
 source("ui_env.R", local=TRUE)
-
 source("ui_info.R", local=TRUE)
 source("ui_Point.R", local=TRUE)
+source("ui_ResultAll.R", local=TRUE)
+source("ui_ResultTeam.R", local=TRUE)
 
 
 
@@ -11,7 +12,11 @@ dashboardPage(
     sidebarMenu(
       menuItem("Information", icon=icon("info"), tabName="tab_info"
       ),
-      menuItem("Point", icon=icon("line-chart"), tabName="tab_Point"
+      menuItem(menuStrPoint, icon=icon("line-chart"), tabName="tab_Point"
+      ),
+      menuItem(menuStrResult, icon=icon("line-chart"), 
+               menuSubItem(menuStrResultAll,tabName="tab_ResultAll"),
+               menuSubItem(menuStrResultTeam, tabName="tab_ResultTeam")
       )
       
     )
@@ -21,7 +26,9 @@ dashboardPage(
     
     tabItems(
       tabItem_info,
-      tabItem_Point
+      tabItem_Point,
+      tabItem_ResultAll,
+      tabItem_ResultTeam
       
     )
   ),
