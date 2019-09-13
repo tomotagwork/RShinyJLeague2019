@@ -1,5 +1,5 @@
 tabItem_info <- tabItem("tab_info",
-                        div(p("[2019/09/13, ver1.0]"),align="right"),
+                        div(p("[2019/09/13, ver0.9]"),align="right"),
                         div(img(src="shika02_maru.gif", width="75px", height="75px"),align="center"),
                         h1("Jリーグ 2019 集計"),
                         hr(),

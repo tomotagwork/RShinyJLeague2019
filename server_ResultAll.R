@@ -1,5 +1,5 @@
 output$dataTable_ResultAll <- renderDataTable({
-  if (nrow(dfTempMatch)>0) {
+  if (nrow(dfTeamData)>0) {
     dfTempMatch <- dplyr::select(dfTeamData, target_team, section_num, target_team_matchdetail,match_link)
     dfTempMatch$section_num <- as.numeric(stringi::stri_trans_nfkc(stringr::str_sub(dfTempMatch$section_num, 2,-2)))
     
