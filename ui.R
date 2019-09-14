@@ -14,7 +14,7 @@ dashboardPage(
       ),
       menuItem(menuStrPoint, icon=icon("line-chart"), tabName="tab_Point"
       ),
-      menuItem(menuStrResult, icon=icon("line-chart"), 
+      menuItem(menuStrResult, icon=icon("table"), 
                menuSubItem(menuStrResultAll,tabName="tab_ResultAll"),
                menuSubItem(menuStrResultTeam, tabName="tab_ResultTeam")
       )

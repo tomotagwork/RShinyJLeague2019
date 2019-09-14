@@ -21,7 +21,8 @@ purrr::iwalk(listTeamData, ~ {
   
   temp_dataTabelOutputName <- paste0("dataTable_ResultTeam",.y)
   output[[temp_dataTabelOutputName]] <- renderDataTable({
-    dfTempTeam <- listTeamData[[.y]]
+    #dfTempTeam <- listTeamData[[.y]]
+    dfTempTeam <- .x
     dfTempTeam$score <- ifelse(dfTempTeam$score != "vs", 
                                paste0('<a href="', dfTempTeam$match_link, '"target="_blank">', dfTempTeam$score, '</a>'), 
                                dfTempTeam$score)
