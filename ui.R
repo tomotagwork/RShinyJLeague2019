@@ -4,7 +4,7 @@ source("ui_Point.R", local=TRUE)
 source("ui_ResultAll.R", local=TRUE)
 source("ui_ResultTeam.R", local=TRUE)
 
-
+source('ui_javaScript.R', local = TRUE)
 
 dashboardPage(
   dashboardHeader(title = "JLeague2019"),
@@ -22,8 +22,7 @@ dashboardPage(
     )
   ),
   dashboardBody(
-    #tag$script(HTML(strJavaScript01)),
-    
+    tags$script(HTML(strJavaScript01)),
     tabItems(
       tabItem_info,
       tabItem_Point,
